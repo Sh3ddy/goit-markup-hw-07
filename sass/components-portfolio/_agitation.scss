@@ -1,0 +1,54 @@
+
+.agitation__panel {
+	font-family: "Roboto";
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+	padding-bottom: 20px;
+}
+
+.agitation {
+	margin-top: 75px;
+	margin-left: 70px;
+}
+
+.network__bg {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 20px;
+	width: 44px;
+	height: 44px;
+	margin-right: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	fill: #ffffff;
+	&:hover {
+		background-color: #2196f3;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	}
+}
+
+.network-bg {
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 20px;
+	width: 44px;
+	height: 44px;
+	margin-right: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.social__network {
+	width: 20px;
+	height: 20px;
+}
+
+.network__list {
+	display: flex;
+}
