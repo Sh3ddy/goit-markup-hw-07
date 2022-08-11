@@ -1,25 +1,24 @@
 
-
-
-.team__title {
-	font-family: 'Roboto';
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1;
-	text-align: center;
-	letter-spacing: 0.03em;
-	text-decoration: none;
-	color: #212121;
-	margin-bottom: 50px;
-	padding-top: 94px;
-}
-.team__list {
-	display: flex;
-	justify-content: center;
-}
 .team {
 	background-color: #F5F4FA;
-	&__content {
+	
+	&__title {
+		font-family: 'Roboto';
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 1;
+		text-align: center;
+		letter-spacing: 0.03em;
+		text-decoration: none;
+		color: #212121;
+		margin-bottom: 50px;
+		padding-top: 94px;
+	}
+	&__list {
+		display: flex;
+		justify-content: center;
+	}
+	&__item {
 		margin-right: 30px;
 		margin-bottom: 94px;
 		text-align: center;
@@ -43,39 +42,42 @@
 		height: 260px;
 	}
 }
-.network__panel {
-	display: flex;
-	padding-top: 16px;
-	padding-left: 30px;
-}
-.social__network-bg {
-	background: rgba(255, 255, 255, 0.1);
-	border-radius: 20px;
-	width: 44px;
-	height: 44px;
-	margin-right: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	&:hover .social__network-team {
-		fill: #FFFFFF;
-		transition-duration: 250ms;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.social {
+		display: flex;
+		padding-top: 16px;
+		padding-left: 30px;
+
+	&__list {
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 20px;
+		width: 44px;
+		height: 44px;
+		margin-right: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		&:hover .social__icon {
+			fill: #FFFFFF;
+			transition-duration: 250ms;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		}
+		&:hover {
+			background-color: #2196F3;
+			transition-duration: 250ms;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		}
 	}
-	&:hover {
-		background-color: #2196F3;
-		transition-duration: 250ms;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+		&__icon {
+			width: 20px;
+			height: 20px;
+			fill: #AFB1B8;
+		&:hover {
+				fill: #FFFFFF;
+				transition-duration: 250ms;
+				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+			}
+		}
 	}
-}
-.social__network-team:hover {
-	fill: #FFFFFF;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social__network-team {
-	width: 20px;
-	height: 20px;
-	fill: #AFB1B8;
-}
+

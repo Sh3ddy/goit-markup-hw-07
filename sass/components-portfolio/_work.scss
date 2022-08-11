@@ -1,5 +1,4 @@
-
-.work {
+.cards {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -13,73 +12,74 @@
 		height: 404px;
 		position: relative;
 		overflow: hidden;
-		&:hover {
-			box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-			cursor: pointer;
-			.overly__examples {
-				opacity: 1;
-				transform: translateY(0px);
-				overflow: hidden;
-				transition-duration: 500ms;
-				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-				background: rgba(33, 150, 243, 0.9);
-				box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-				cursor: pointer;
-			}
+	}
+	&__examples:hover {
+		margin-left: 30px;
+		margin-bottom: 30px;
+		border: 1px solid #eeeeee;
+		width: 370px;
+		height: 404px;
+		position: relative;
+		overflow: hidden;
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+	&:hover .cards__overly {
+		cursor: pointer;
+		opacity: 1;
+		transform: translateY(0px);
+		overflow: hidden;
+		transition-duration: 500ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		background: rgba(33, 150, 243, 0.9);
+		box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 		}
 	}
-}
-
-.img {
-	position: relative;
-	&__examples {
+	&__list {
 		position: relative;
 		overflow: hidden;
 	}
-}
-
-.examples {
-	font-family: "Roboto";
-	font-weight: 700;
-	font-size: 18px;
-	line-height: 2;
-	letter-spacing: 0.06em;
-	color: #212121;
-	padding-top: 20px;
-	padding-left: 20px;
-}
-.overly__examples {
-	position: absolute;
-	font-family: "Roboto";
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 28px;
-	letter-spacing: 0.03em;
-	color: #ffffff;
-	width: 370px;
-	height: 294px;
-	top: 0px;
-	right: 0px;
-	padding-top: 63px;
-	padding-bottom: 63px;
-	padding-left: 24px;
-	padding-right: 24px;
-	background: rgba(33, 150, 243, 0.9);
-	opacity: 0;
-	transform: translateY(100%);
-	transition-duration: 500ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.desc__examples {
-	font-family: "Roboto";
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.9;
-	letter-spacing: 0.03em;
-	color: #757575;
-	padding-bottom: 20px;
-	padding-left: 20px;
+	&__images {
+		position: relative;
+	}
+	&__overly {
+		position: absolute;
+		font-family: "Roboto";
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 28px;
+		letter-spacing: 0.03em;
+		color: #ffffff;
+		width: 370px;
+		height: 294px;
+		top: 0px;
+		right: 0px;
+		padding-top: 63px;
+		padding-bottom: 63px;
+		padding-left: 24px;
+		padding-right: 24px;
+		background: rgba(33, 150, 243, 0.9);
+		opacity: 0;
+		transform: translateY(100%);
+		transition-duration: 500ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	}
+	&__project {
+		font-family: "Roboto";
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 2;
+		letter-spacing: 0.06em;
+		color: #212121;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+	&__desc {
+		font-family: "Roboto";
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 1.9;
+		letter-spacing: 0.03em;
+		color: #757575;
+		padding-bottom: 20px;
+		padding-left: 20px;
+	}
 }

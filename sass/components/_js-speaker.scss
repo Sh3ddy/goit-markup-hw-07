@@ -1,24 +1,23 @@
 
-.js__speaker-form {
+.js__speaker {
 	width: 448px;
 	height: 342px;
 	margin-left: 40px;
 	margin-right: 40px;
+
+	&-title {
+		font-family: 'Roboto';
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 23px;
+		text-align: center;
+		letter-spacing: 0.03em;
+		padding-top: 40px;
+		padding-bottom: 12px;
+		color: #212121;
+	}
 }
-.js__speaker-title {
-	font-family: 'Roboto';
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 23px;
-	text-align: center;
-	letter-spacing: 0.03em;
-	padding-top: 40px;
-	padding-bottom: 12px;
-	color: #212121;
-}
-textarea {
-	resize: none;
-}
+
 .form__field {
 	margin-bottom: 10px;
 	display: flex;
@@ -37,6 +36,9 @@ textarea {
 				fill: #2196F3;
 			}
 		}
+	}
+	textarea {
+		resize: none;
 	}
 	textarea:focus {
 		outline: 1px solid #2196F3;
@@ -70,9 +72,33 @@ textarea {
 		padding-bottom: 4px;
 	}
 }
+
 .form__policy {
 	padding-top: 10px;
 	padding-bottom: 30px;
+
+	&-agreement {
+		font-family: 'Roboto';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		cursor: pointer;
+		margin-left: 40px;
+		position: absolute;
+		letter-spacing: 0.03em;
+		color: #757575;
+	}
+		&-accent {
+			font-family: 'Roboto';
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 24px;
+			letter-spacing: 0.03em;
+			text-decoration-line: underline;
+			cursor: pointer;
+			color: #2196F3;
+		}
+	
 	&-mark {
 		width: 16px;
 		height: 15px;
@@ -88,7 +114,30 @@ textarea {
 		transition-duration: 500ms;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	}
+
+	&-checkbox {
+		position: absolute;
+		left: 30px;
+		appearance: none;
+		&:checked+.form__policy-mark {
+			width: 16px;
+			height: 15px;
+			margin-right: 7px;
+			margin-left: 15px;
+			background: #2196F3;
+			border-radius: 2px;
+			border: 2px solid #2196F3;
+			display: inline-block;
+			cursor: pointer;
+			position: absolute;
+			left: -35px;
+			top: 3px;
+			transition-duration: 500ms;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		}
+	}
 }
+
 .form__submit {
 	width: 200px;
 	height: 50px;
@@ -105,57 +154,19 @@ textarea {
 		transition-duration: 250ms;
 		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	}
-}
-.checkbox {
-	position: absolute;
-	left: 30px;
-	appearance: none;
-	&:checked+.form__policy-mark {
-		width: 16px;
-		height: 15px;
-		margin-right: 7px;
-		margin-left: 15px;
-		background: #2196F3;
-		border-radius: 2px;
-		border: 2px solid #2196F3;
-		display: inline-block;
-		cursor: pointer;
-		position: absolute;
-		left: -35px;
-		top: 3px;
-		transition-duration: 500ms;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	}
-}
-.submit {
-	font-family: 'Roboto';
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 30px;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	letter-spacing: 0.06em;
-	color: #FFFFFF;
-}
-.policy {
-	font-family: 'Roboto';
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
-	cursor: pointer;
-	margin-left: 40px;
-	position: absolute;
-	letter-spacing: 0.03em;
-	color: #757575;
-	&__accent {
+
+	&-accept {
 		font-family: 'Roboto';
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 24px;
-		letter-spacing: 0.03em;
-		text-decoration-line: underline;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 30px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		letter-spacing: 0.06em;
 		cursor: pointer;
-		color: #2196F3;
+		color: #FFFFFF;
 	}
 }
+
+

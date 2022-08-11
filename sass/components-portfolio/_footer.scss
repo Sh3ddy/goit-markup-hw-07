@@ -1,72 +1,72 @@
 
 .container {
-	margin-right: auto;
 	margin-left: auto;
+	margin-right: auto;
 	width: 1200px;
 }
 
-.footer__container {
-	display: flex;
+.footer {
+	background-color: #2F303A;
+	&__container {
+		display: flex;
+	}
 }
 
 .wrapper {
-	font-family: "Roboto";
+	display: flex;
 	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.7;
-	letter-spacing: 0.03em;
-	color: #757575;
-	&:hover {
-		color: #2196f3;
-		transition-duration: 250ms;
-		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	}
-	&_item {
-		font-family: "Roboto";
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 24px;
-		letter-spacing: 0.03em;
-		color: #ffffff;
-	}
-}
 
-.footer {
-	background-color: #212121;
-	&__logo {
-		font-family: "Raleway";
-		font-weight: 700;
-		font-size: 26px;
-		line-height: 1;
-		text-decoration: none;
-		color: #2196f3;
-	}
-	&__botton {
-		margin-top: 9px;
-	}
-	&__inc {
-		margin-bottom: 20px;
-	}
 	&__box {
 		margin-top: 60px;
 		margin-bottom: 60px;
 	}
-}
 
-.logo_wrapper {
-	font-family: "Raleway";
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.2;
-	text-decoration: none;
-	color: #2196f3;
-}
+	&__inc {
+		margin-bottom: 20px;
+	}
 
-address {
-	font-style: normal;
-}
+	&__logo {
+		font-family: 'Raleway';
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 1;
+		text-decoration: none;
+		color: #2196F3;
+	}
 
-.footer {
-	background-color: #2f303a;
+    &__accent {
+		font-family: 'Raleway';
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 1;
+		text-decoration: none;
+		color: #ffffff;
+	}
+
+	&__botton {
+		margin-top: 9px;
+	}
+
+	&__item {
+		font-family: 'Roboto';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: 0.03em;
+		color: #FFFFFF;
+	}
+
+	&__network {
+		font-family: 'Roboto';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 2px;
+		letter-spacing: 0.03em;
+		color: #757575;
+		&:hover {
+			color: #2196F3;
+			transition-duration: 250ms;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		}
+	}
 }

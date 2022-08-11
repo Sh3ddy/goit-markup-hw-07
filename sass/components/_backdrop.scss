@@ -1,6 +1,4 @@
 
-
-
 .backdrop {
 	position: fixed;
 	width: 100%;
@@ -23,19 +21,8 @@
 	left: 536px;
 	top: 221px;
 	background-color: #FFFFFF;
-}
-.button__modal {
-	box-sizing: border-box;
-	width: 30px;
-	height: 30px;
-	padding-top: 6px;
-	background: #FFFFFF;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	border-radius: 20px;
-	&:hover {
-		fill: #2196F3;
-	}
-	&-position {
+
+	&__position {
 		position: absolute;
 		right: 0%;
 		margin-top: 8px;
@@ -43,7 +30,24 @@
 		background-color: #FFFFFF;
 		border-radius: 20px;
 	}
+
+	&__position-icon {
+		box-sizing: border-box;
+		width: 30px;
+		height: 30px;
+		padding-top: 6px;
+		background: #FFFFFF;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		border-radius: 20px;
+		&-icon {
+			fill: #000000;
+		}
+		
+		&:hover {
+			fill: #2196F3;
+			cursor: pointer;
+		}
+	}
 }
-.button__modal {
-	fill: #000000;
-}
+
+
