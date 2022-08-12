@@ -1,11 +1,11 @@
-@import "./components/header";
+@import "./layouts/header";
 @import "./components/teamwork";
 @import "./components/feautures";
 @import "./components/busyness";
 @import "./components/team";
 @import "./components/customer";
-@import "./components/footer";
-@import "./components/agitation";
-@import "./components/speaker-form";
+@import "./layouts/footer";
+@import "./layouts/agitation";
+@import "./layouts/speaker-form";
 @import "./components/backdrop";
-@import "./components/js-speaker";
+@import "./components/form-field";

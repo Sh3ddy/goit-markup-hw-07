@@ -32,22 +32,25 @@
 		color: #212121;
 		margin-top: 30px;
 	}
+
+	&__img {
+		width: 270px;
+		height: 260px;
+	}
+
 	&__activity {
 		font-family: 'Roboto';
 		color: #757575;
 		margin-top: 10px;
 	}
-	&__img {
-		width: 270px;
-		height: 260px;
-	}
-}
-.social {
+
+	&__social-list {
 		display: flex;
 		padding-top: 16px;
 		padding-left: 30px;
+	}
 
-	&__list {
+	&__social-item {
 		background: rgba(255, 255, 255, 0.1);
 		border-radius: 20px;
 		width: 44px;
@@ -57,7 +60,7 @@
 		justify-content: center;
 		align-items: center;
 		cursor: pointer;
-		&:hover .social__icon {
+		&:hover .team__social-icon {
 			fill: #FFFFFF;
 			transition-duration: 250ms;
 			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -68,8 +71,7 @@
 			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 		}
 	}
-
-		&__icon {
+	&__social-icon {
 			width: 20px;
 			height: 20px;
 			fill: #AFB1B8;
@@ -79,5 +81,5 @@
 				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 			}
 		}
-	}
+}
 
