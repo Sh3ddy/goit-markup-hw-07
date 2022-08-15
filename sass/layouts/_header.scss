@@ -6,6 +6,8 @@
 }
 
 .header {
+	border: 1px solid #ECECEC;
+	
 	&__container {
 		display: flex;
 		padding-top: 25px;
@@ -20,30 +22,17 @@
 		text-decoration: none;
 		color: #2196F3;
 	}
+
 	&__accent {
 		text-decoration: none;
 		color: black;
 	}
+
 	&__nav {
 		display: flex;
 		margin-left: 93px;
 	}
-    &__nav-is-active {
-		color: #2196F3;
-		font-family: 'Roboto';
-		position: relative;
-		margin-right: 50px;
-		&::after {
-			position: absolute;
-			content: "";
-			width: 100%;
-			height: 4px;
-			left: 0px;
-			top: 45px;
-			background: #2196F3;
-			border-radius: 2px;
-		}
-	}
+
 	&__nav-ref {
 		color: #212121;
 		font-family: 'Roboto';
@@ -69,6 +58,24 @@
 		&:hover::after {
 			opacity: 1;
 			transform: scaleX(1);
+		}
+	}
+
+    &__nav-is-active {
+		color: #2196F3;
+		font-family: 'Roboto';
+		margin-right: 50px;
+		position: relative;
+		
+		&::before {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 4px;
+			left: 0px;
+			top: 45px;
+			background: #2196F3;
+			border-radius: 2px;
 		}
 	}
 
@@ -105,7 +112,8 @@
 				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 			  }     
 			}
-		&__nav-envelope {
+
+	&__nav-envelope {
 			width: 16px;
 			height: 12px;
 			cursor: pointer;
@@ -118,7 +126,8 @@
 				transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 			}
 		}
-		&__nav-smart {
+
+	&__nav-smart {
 				width: 10px;
 				height: 16px;
 				cursor: pointer;

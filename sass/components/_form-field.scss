@@ -1,5 +1,5 @@
 
-.form__field {
+.modal__form {
 	width: 448px;
 	height: 342px;
 	margin-left: 40px;
@@ -121,7 +121,7 @@
 		position: absolute;
 		left: 30px;
 		appearance: none;
-		&:checked+.form__field-mark {
+		&:checked+.modal__form-mark {
 			width: 16px;
 			height: 15px;
 			margin-right: 7px;

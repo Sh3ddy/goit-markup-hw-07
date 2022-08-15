@@ -4,6 +4,9 @@
   width: 1200px;
 }
 
+.header {
+  border: 1px solid #ECECEC;
+}
 .header__container {
   display: flex;
   padding-top: 25px;
@@ -24,22 +27,6 @@
 .header__nav {
   display: flex;
   margin-left: 93px;
-}
-.header__nav-is-active {
-  color: #2196F3;
-  font-family: "Roboto";
-  position: relative;
-  margin-right: 50px;
-}
-.header__nav-is-active::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 4px;
-  left: 0px;
-  top: 45px;
-  background: #2196F3;
-  border-radius: 2px;
 }
 .header__nav-ref {
   color: #212121;
@@ -67,6 +54,22 @@
 .header__nav-ref:hover::after {
   opacity: 1;
   transform: scaleX(1);
+}
+.header__nav-is-active {
+  color: #2196F3;
+  font-family: "Roboto";
+  margin-right: 50px;
+  position: relative;
+}
+.header__nav-is-active::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  left: 0px;
+  top: 45px;
+  background: #2196F3;
+  border-radius: 2px;
 }
 .header__nav-list {
   display: flex;
@@ -421,7 +424,7 @@
   text-decoration: none;
   color: #ffffff;
 }
-.footer__botton {
+.footer__link {
   margin-top: 9px;
 }
 .footer__item {
@@ -446,11 +449,11 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-agitation {
+.footer__agitation {
   margin-top: 75px;
   margin-left: 70px;
 }
-.section-agitation__title {
+.footer__agitation-title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
@@ -459,15 +462,15 @@
   color: #FFFFFF;
   margin-bottom: 20px;
 }
-.section-agitation__list {
+.footer__agitation-list {
   display: flex;
 }
-.section-agitation__icon {
+.footer__agitation-icon {
   width: 20px;
   height: 20px;
   fill: #FFFFFF;
 }
-.section-agitation__item {
+.footer__agitation-item {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   width: 44px;
@@ -478,24 +481,24 @@
   align-items: center;
   cursor: pointer;
 }
-.section-agitation__item:hover .section-agitation__icon {
+.footer__agitation-item:hover .footer__agitation-icon {
   fill: #FFFFFF;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.section-agitation__item:hover {
+.footer__agitation-item:hover {
   background-color: #2196F3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.speaker__form {
+.footer__speaker {
   margin-top: 75px;
   margin-left: 93px;
   display: flex;
   flex-direction: column;
 }
-.speaker__form-list {
+.footer__speaker-list {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
@@ -505,10 +508,10 @@
   padding-bottom: 20px;
   color: #FFFFFF;
 }
-.speaker__form-sub {
+.footer__speaker-sub {
   display: flex;
 }
-.speaker__form-gmail {
+.footer__speaker-gmail {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -519,7 +522,7 @@
   outline: 0px;
   color: rgba(255, 255, 255, 0.6);
 }
-.speaker__form-accept {
+.footer__speaker-accept {
   width: 200px;
   height: 50px;
   padding-left: 29px;
@@ -530,12 +533,12 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.speaker__form-accept:hover {
+.footer__speaker-accept:hover {
   background-color: #188CE8;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.speaker__form-subscribe {
+.footer__speaker-subscribe {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -547,7 +550,7 @@
   cursor: pointer;
   color: #FFFFFF;
 }
-.speaker__form-icon {
+.footer__speaker-icon {
   width: 24px;
   height: 24px;
   display: flex;
@@ -604,13 +607,13 @@
   cursor: pointer;
 }
 
-.form__field {
+.modal__form {
   width: 448px;
   height: 342px;
   margin-left: 40px;
   margin-right: 40px;
 }
-.form__field-title {
+.modal__form-title {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 20px;
@@ -621,33 +624,33 @@
   padding-bottom: 12px;
   color: #212121;
 }
-.form__field-list {
+.modal__form-list {
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   position: relative;
 }
-.form__field-list input {
+.modal__form-list input {
   width: 448px;
   height: 40px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.form__field-list input:focus {
+.modal__form-list input:focus {
   outline: 1px solid #2196F3;
 }
-.form__field-list input:focus-relative {
+.modal__form-list input:focus-relative {
   outline: 0px solid #2196F3;
   fill: #2196F3;
 }
-.form__field textarea {
+.modal__form textarea {
   resize: none;
 }
-.form__field textarea:focus {
+.modal__form textarea:focus {
   outline: 1px solid #2196F3;
 }
-.form__field textarea {
+.modal__form textarea {
   font-family: "Roboto";
   width: 448px;
   height: 120px;
@@ -657,7 +660,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.form__field-relative {
+.modal__form-relative {
   position: absolute;
   display: inline-block;
   width: 18px;
@@ -665,7 +668,7 @@
   top: 50%;
   left: 12px;
 }
-.form__field-subtitle {
+.modal__form-subtitle {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -675,11 +678,11 @@
   color: #757575;
   padding-bottom: 4px;
 }
-.form__field-policy {
+.modal__form-policy {
   padding-top: 10px;
   padding-bottom: 30px;
 }
-.form__field-agreement {
+.modal__form-agreement {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
@@ -690,7 +693,7 @@
   letter-spacing: 0.03em;
   color: #757575;
 }
-.form__field-accent {
+.modal__form-accent {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;
@@ -701,7 +704,7 @@
   cursor: pointer;
   color: #2196F3;
 }
-.form__field-mark {
+.modal__form-mark {
   width: 16px;
   height: 15px;
   margin-right: 7px;
@@ -716,14 +719,14 @@
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__field-checkbox {
+.modal__form-checkbox {
   position: absolute;
   left: 30px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
-.form__field-checkbox:checked + .form__field-mark {
+.modal__form-checkbox:checked + .modal__form-mark {
   width: 16px;
   height: 15px;
   margin-right: 7px;
@@ -739,7 +742,7 @@
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__field-submit {
+.modal__form-submit {
   width: 200px;
   height: 50px;
   display: flex;
@@ -751,12 +754,12 @@
   border-radius: 4px;
   cursor: pointer;
 }
-.form__field-submit:hover {
+.modal__form-submit:hover {
   background-color: #188CE8;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__field-accept {
+.modal__form-accept {
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
