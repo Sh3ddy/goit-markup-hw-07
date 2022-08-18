@@ -630,6 +630,10 @@
   flex-direction: column;
   position: relative;
 }
+.modal__form-list:focus-within {
+  fill: #2196F3;
+  cursor: pointer;
+}
 .modal__form-list input {
   width: 448px;
   height: 40px;
@@ -639,10 +643,6 @@
 }
 .modal__form-list input:focus {
   outline: 1px solid #2196F3;
-}
-.modal__form-list input:focus-relative {
-  outline: 0px solid #2196F3;
-  fill: #2196F3;
 }
 .modal__form textarea {
   resize: none;
@@ -770,4 +770,8 @@
   letter-spacing: 0.06em;
   cursor: pointer;
   color: #FFFFFF;
+}
+.modal__form-icon:focus {
+  fill: #2196F3;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
